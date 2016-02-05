@@ -1,3 +1,0 @@
-var q2 = q1[0]
-console.log("Question 2: " + q2);
-
