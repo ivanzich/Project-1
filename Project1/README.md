@@ -1,6 +1,6 @@
 # Project-1
 
-Game link: computer-science-trivia.bitballoon.com
+Game link: http://www.computer-science-trivia.bitballoon.com
 
 
 
