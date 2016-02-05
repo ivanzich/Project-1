@@ -1,0 +1,12 @@
+var q1 = ["img1.jpeg", "img2.jpeg", "img3.jpeg"]; 
+cconsole.log("Question 1" + q1)
+
+var q2 = q1[0]
+console.log("Question 2: " + q2);
+
+var q3 = q1.length
+console.log("Question 3: " +q3);
+
+
+var q4 = q1[q1.length-1];
+console.log("Question 4: " + q4);
