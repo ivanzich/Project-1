@@ -1,7 +1,7 @@
 # Project-1
 
 Game link: computer-science-trivia.bitballoon.com
-Trello link : https://trello.com/invite/b/4n4SfqlC/5fc2ab01f326ab669d17ce3e14e4bf20/trivia-game
+* **Trello link : https://trello.com/invite/b/4n4SfqlC/5fc2ab01f326ab669d17ce3e14e4bf20/trivia-game**
 
 
 
