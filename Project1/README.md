@@ -1,7 +1,7 @@
 # Project-1
 
 Game link: computer-science-trivia.bitballoon.com
-Trello link
+Trello link : https://trello.com/invite/b/4n4SfqlC/5fc2ab01f326ab669d17ce3e14e4bf20/trivia-game
 
 
 
@@ -11,7 +11,7 @@ User Story
 
 
 
-▪	as user I want to start a game with start button
+* **as user I want to start a game with start button**
 ▪	as user I will see 1 question and 4 answers 
 ▪	as user if I answer incorrectly I can’t  move to the next question
 ▪	as user when I answer correctly I can move to the next question
