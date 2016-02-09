@@ -1,13 +1,20 @@
-// Click the start button to start the game 
+// Hey Luca, here is some feedback for your Project-1. Overall you did a great job!
+// I'm adding some code review here.
+
+// Click the start button to start the game
 
 
 $("#start").click(function() {
 	// Populate the game
+	// nice job factoring out these functions!
 	getRandomQuestion();
 	populate();
+	// This could also be factored out into a function (outside of start)
+	// updateTimer could also be defined outside of the countdown function and
+	// simply called from inside the countdown function.
+
 	// Countdown timer set up and set it to start when the `Start` button is clicked.
-	function countdown( elementName, minutes, seconds )
-{
+	function countdown( elementName, minutes, seconds ) {
     var element, endTime, hours, mins, msLeft, time;
 
     function twoDigits( n )
@@ -37,18 +44,19 @@ $("#start").click(function() {
 
 	countdown("countdown", 1, 0);
 });
+
 $(document).ready(function() {
 	$("button").effect();
 });
 
-
+// this is great looking code:
 // populate function
 var populate = function() {
 	var $questionspace = $("#questionspace");
 	var $answer1 = $("#1");
 	var $answer2 = $("#2");
 	var $answer3 = $("#3");
-	var $answer4 = $("#4");	
+	var $answer4 = $("#4");
 	$questionspace.text(questionList[currentQuestion][0]);
 	$answer1.text(questionList[currentQuestion][1]);
 	$answer2.text(questionList[currentQuestion][2]);
@@ -62,13 +70,12 @@ var currentQuestion;
 
 // list with questions
 
-
 var questionList = [
 [" Which of the following languages is more suited to a structured program?", "PL1", "BASIC", "FORTRAN", "PASCAL"],
 [" A computer assisted method for the recording and analyzing of existing or hypothetical systems is?", "Data transmission", "Data flow", "Data capture", "Data processing"],
 [" The brain of any computer system is", "ALU", "Memory", "CPU", "Control unit"],
 [" What difference does the 5th generation computer have from other generation computers?", "Technological advancement", "Scientific code", "Object Oriented Programming", "Superior"],
-[" Which of the following computer language is used for artificial intelligence?","FORTRAN", "PROLOG", "COBOL"], 
+[" Which of the following computer language is used for artificial intelligence?","FORTRAN", "PROLOG", "COBOL"],
 [" A section of code to which control is transferred when a processor is interrupted is known as ?", "M ", "SVC", "IP", "MDR"],
 [" The binary system uses powers of?", " 2", "10", "8", "16"],
 [" A computer program that converts assembly language to machine language is ?", "Compiler", "Interpreter", "Assembler", "Comparator"],
@@ -83,22 +90,24 @@ var questionList = [
 [" With respect to a network interface card, the term 10/100 refers to ?","Protocol speed", "a fiber speed", "megabits per seconds", "minimum and maximum server speed"],
 [" Which type of system board is the MOST likely candidate for processor upgrading if you want maximum performance and future compatibility?", "ML", "PCI", "ISA", "EISA"],
 [" Which of the following is not a disadvantage of wireless LAN?", "Slower data transmission","Higher error rate", "interference of transmissions from different computers", "All of the above"],
-["Which of the following TCP/IP protocol is used for transferring electronic mail messages from one machine to another?", "FTP", "SNMP", "SMTP", "RPC"], 
+["Which of the following TCP/IP protocol is used for transferring electronic mail messages from one machine to another?", "FTP", "SNMP", "SMTP", "RPC"],
 ["What device separates a single network into two segments but lets the two segments appear as one to higher protocols?", "Switch", "Gateway", "Bridge", "Router"],
 
 
 ];
-
+// Great job using this answer key to check solutions!
 // Answer key for the questions list
 var answerKey = [4,2,3,1,2,1,3,3,2,2,3,3,2,2,1,3,2,4,3,2];
 
 
 /* Generates a random question */
 var getRandomQuestion = function() {
-	currentQuestion = Math.floor(Math.random() * questionList.length);	
+	// this is great. currentQuestion might be more aptly named
+	// currentQuestionIndex (since it is just a number and not an actual question)
+	currentQuestion = Math.floor(Math.random() * questionList.length);
 };
 
-// Click one of the four possible answers 
+// Click one of the four possible answers
 $(".answers").on('click', function() {
 	var answerNum =	$(this).attr("id");
 	winner(answerNum);
@@ -111,8 +120,12 @@ var winner = function(answerNum) {
 	if (answerKey[currentQuestion] == answerNum) {
 		getRandomQuestion();
 		populate();
-		
+
 	}	else  {
 		alert("Wrong answer. Try again.")
 	}
-};	
+};
+
+// Excellent work Luca! Your project looked good, and you got a lot of functionality
+// completed in the time given. On top of that, your code is pretty well organized
+// and clear. 
