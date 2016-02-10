@@ -13,7 +13,7 @@ User Story
 
 
 
-**▪ as user I want to start a game with start button**
+*▪ as user I want to start a game with start button**
 **▪	as user I will see 1 question and 4 answers** 
 **▪	as user if I answer incorrectly I can’t  move to the next question**
 **▪	as user when I answer correctly I can move to the next question**
