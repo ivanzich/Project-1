@@ -36,7 +36,7 @@ Icebox
 
 Game Description and technologies used
 
-Trivia game that’s based on Computer Science questions. HTML, CSS, JavaScript and jQuery are the tools that I’ve used for this game. In the near future I want to add jQuery UI features to make game more  visually catchy and exciting. 
+Trivia game that’s based on Computer Science questions. HTML, CSS, JavaScript and jQuery are the technologies that I’ve used for this game. In the  future I want to add jQuery UI features to make game more  visually catchy and exciting. Also,I want to add different categories and at least 2 different users, who  will have option to play this game vs each other with displaying their scores after the game. 
 
 
 
